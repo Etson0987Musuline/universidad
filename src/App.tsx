@@ -11,11 +11,13 @@ import DetalleCarrera from './pages/DetalleCarrera';
 import Admision from './pages/Admision';
 import Noticias from './pages/Noticias';
 import Documentos from './pages/Documentos';
+import DownloadZip from './pages/DownloadZip';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/descargar" element={<DownloadZip />} />
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="historia" element={<Historia />} />

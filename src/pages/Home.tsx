@@ -153,6 +153,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Botón flotante de descarga */}
+      <Link
+        to="/descargar"
+        className="fixed bottom-6 right-6 bg-gradient-to-r from-green-600 to-emerald-700 text-white px-5 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all z-50 flex items-center gap-2"
+        title="Descargar código fuente"
+      >
+        <i className="fas fa-download"></i>
+        <span className="hidden sm:inline font-medium">Descargar ZIP</span>
+      </Link>
     </div>
   );
 }

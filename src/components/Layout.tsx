@@ -157,7 +157,12 @@ export default function Layout() {
           </div>
         </div>
         <div className="border-t border-gray-700 py-4 text-center text-sm text-gray-500">
-          © 2026 {institucion.nombre}. Todos los derechos reservados.
+          <p>© 2026 {institucion.nombre}. Todos los derechos reservados.</p>
+          <p className="mt-2">
+            <Link to="/descargar" className="text-blue-400 hover:text-blue-300">
+              <i className="fas fa-download mr-1"></i>Descargar código fuente del proyecto
+            </Link>
+          </p>
         </div>
       </footer>
     </div>
